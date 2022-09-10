@@ -1,0 +1,11 @@
+.first-header{
+	margin-top: 10px
+}
+
+body{
+	font-size: 16px
+}
+.pubData{
+	display: flex;
+    align-items: center;
+}
