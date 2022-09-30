@@ -111,13 +111,16 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12">
+                <p><b>Sep 2022:</b> Compressing Video Calls using Synthetic Talking Heads got accepted to <a href="https://bmvc2022.org/"
+                        target="_blank">BMVC 2022</a>.</p>
+                
                 <p><b>Aug 2022:</b> Audio-Visual Face Reenactment got accepted to <a href="https://wacv2023.thecvf.com/"
                         target="_blank">WACV 2023</a>.</p>
 
                 <p> <b>Jan 2021:</b> Joining <a href="http://cvit.iiit.ac.in/" target="_blank">CVIT</a>,<a href="https://www.iiit.ac.in/" target="_blank">IIIT-Hyderabad</a> as a full-time MS by Research student under <a href="https://faculty.iiit.ac.in/~jawahar/index.html"
                         target="_blank">Prof. C.V. Jawahar</a></p>
 
-                <p> <b>Oct 2020:</b> <a href="https://arxiv.org/pdf/2008.10831.pdf" target="_blank">CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images</a> got accepted to <a
+                <p> <b>Oct 2020:</b> <a href="https://ieeexplore.ieee.org/abstract/document/9411922" target="_blank">CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images</a> got accepted to <a
                         href="https://www.micc.unifi.it/icpr2020/" target="_blank">ICPR 2020</a> (<style="color:red"><b>Oral</b>).</p>
 
                 <p><b> Nov 2019:</b> Joining <a href="https://www.iiit.ac.in/" target="_blank">IIIT-Hyderabad</a> as a Research Fellow at <a href="http://cvit.iiit.ac.in/" target="_blank">CVIT</a>.</p>
@@ -137,18 +140,15 @@
             </div>
             <div class="col-sm-9 col-md-9">
                 <h3>Audio-Visual Face Reenactment</h3>
-                <p>This work proposes a novel method to generate realistic talking head videos using audio and visual
-                    streams. We animate a source image by transferring head motion from a driving video using a dense
-                    motion field generated using learnable keypoints. We improve the quality of lip sync using audio as
-                    an additional input, helping the network to attend to the mouth region. We use additional priors
-                    using face segmentation and face mesh to improve the structure of the reconstructed faces. Finally,
-                    we improve the visual quality of the generations by incorporating a carefully designed
-                    identity-aware generator module. The identity aware generator takes the source image and the warped
-                    motion features as input to generate a high-quality output with
-                    fine-grained details. Our method produces state-of-the-art results and generalizes well to unseen
-                    faces, languages, and voices. We comprehensively evaluate our approach using multiple metrics and
-                    outperforming the current techniques both qualitative and quantitatively. Our work opens up several
-                    applications, including enabling low bandwidth video calls.
+                <p>This work proposes a novel method to generate realistic talking head videos using audio and visual streams. 
+                    We animate a source image by transferring head motion from a driving video using a dense motion field generated using learnable keypoints. 
+                    We improve the quality of lip sync using audio as an additional input, helping the network to attend to the mouth region. 
+                    We use additional priors using face segmentation and face mesh to improve the structure of the reconstructed faces. 
+                    Finally, we improve the visual quality of the generations by incorporating a carefully designed identity-aware generator module. 
+                    The identity-aware generator takes the source image and the warped motion features as input to generate a high-quality output with fine-grained details. 
+                    Our method produces state-of-the-art results and generalizes well to unseen faces, languages, and voices. 
+                    We comprehensively evaluate our approach using multiple metrics and outperforming the current techniques both qualitative and quantitatively. 
+                    Our work opens up several applications, including enabling low bandwidth video calls.
                 </p>
                 <p> <b>Madhav Agarwal</b>, Rudrabha Mukhopadhyay, Vinay Namboodiri, C.V. Jawahar</p>
                 <p>Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2023</p>
@@ -159,7 +159,7 @@
 
                         </td>
                         <td style="padding: 5px;">
-                            <span style="font-size:24px"><a href='#' target="_blank">[Website]</a></span>
+                            <span style="font-size:24px"><a href='http://cvit.iiit.ac.in/research/projects/cvit-projects/avfr' target="_blank">[Website]</a></span>
                         </td>
                         <td style="padding: 5px;">
                             <span style="font-size:24px"><a href='#' target="_blank">[Code]</a></span>
@@ -177,32 +177,28 @@
             </div>
             <div class="col-sm-9 col-md-9">
                 <h3> CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images</h3>
-                <p>Localizing page elements/objects such as tables,
-                    figures, equations, etc. is the primary step in extracting information from document images. We
-                    propose a novel endto-end trainable deep network, (CDeC-Net) for detecting tables
-                    present in the documents. The proposed network consists of
-                    a multistage extension of Mask R-CNN with a dual backbone
-                    having deformable convolution for detecting tables varying in
-                    scale with high detection accuracy at higher IoU threshold.
-                    We empirically evaluate CDeC-Net on all the publicly available
-                    benchmark datasets — ICDAR-2013, ICDAR-2017, ICDAR-2019,
-                    UNLV, Marmot, PubLayNet, and TableBank — with extensive
-                    experiments. Our solution has three important properties: (i) a single
-                    trained model CDeC-Net‡ performs well across all the popular
-                    benchmark datasets; (ii) we report excellent performances across
-                    multiple, including higher, thresholds of IoU; (iii) by following the
-                    same protocol of the recent papers for each of the benchmarks, we
-                    consistently demonstrate the superior quantitative performance.
-                    Our code and models will be publicly released for enabling the
-                    reproducibility of the results
+                <p>Localizing page elements/objects such as tables, figures, equations, etc. is the primary step in extracting information from document images. 
+                    We propose a novel end-to-end trainable deep network, (CDeC-Net) for detecting tables present in the documents. 
+                    The proposed network consists of a multistage extension of Mask R-CNN with a dual backbone 
+                    having deformable convolution for detecting tables varying in scale with high detection accuracy at higher IoU threshold. 
+                    We empirically evaluate CDeC-Net on the publicly available benchmark datasets with extensive experiments.
+                    Our solution has three important properties: (i) a single trained model CDeC-Net‡ that performs well across all the 
+                    popular benchmark datasets; (ii) we report excellent performances across multiple, including higher, thresholds of IoU; 
+                    (iii) by following the same protocol of the recent papers for each of the benchmarks, we consistently demonstrate the superior quantitative performance. 
+                    Our code and models are publicly available for enabling reproducibility of the results.
                 </p>
                 <p> <b>Madhav Agarwal</b>, Ajoy Mondal, C.V. Jawahar</p>
                 <p>25th International Conference on Pattern Recognition (<b>ICPR</b>), 2020 (<style="color:red"><b>Oral</b>)</p>
                 <table>
                     <tr>
                         <td style="padding: 5px;">
+                            <span style="font-size:24px"><a href='https://ieeexplore.ieee.org/abstract/document/9411922'
+                                    target="_blank">[Paper IEEEXplore]</a></span>
+
+                        </td>               
+                        <td style="padding: 5px;">
                             <span style="font-size:24px"><a href='https://arxiv.org/pdf/2008.10831.pdf'
-                                    target="_blank">[Paper]</a></span>
+                                    target="_blank">[arXiv]</a></span>
 
                         </td>
                         <td style="padding: 5px;">
