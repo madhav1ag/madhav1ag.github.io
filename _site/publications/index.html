@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madhav Agarwal - Publications</title>
+  <meta name="description" content="Madhav Agarwal - Publications.">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/publications/">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/favicon.ico">
+
+
+
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="http://localhost:4000/">Madhav Agarwal</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4000/">Home</a></li>
+		<li><a href="http://localhost:4000/publications">Publications</a></li>
+		<!-- <li><a href="http://localhost:4000/projects">Projects</a></li>
+		<li><a href="http://localhost:4000/experience">Experience</a></li> -->
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="gridid" class="col-sm-12">
+  <h3 id="publications">Publications</h3>
+
+<div class="col-sm-11 clearfix">
+  <div class="well">
+    <pubtit>Understanding the Generalization of Pretrained Diffusion Models on Out-of-Distribution Data</pubtit>
+
+    <p><img src="http://localhost:4000/images/pubpic/aaai_ood.png" class="img-responsive" width="300px" style="float: left" /></p>
+
+    <div style="text-align: justify">
+      <p>This work tackles the important task of understanding out-of-distribution behavior in two prominent types of generative models, i.e., GANs and Diffusion models. Understanding this behavior is crucial in understanding their broader utility and risks as these systems are increasingly deployed in our daily lives. Our first contribution is demonstrating that diffusion spaces outperform GANs’ latent spaces in inverting high-quality OOD images. We also provide a theoretical analysis attributing this to the lack of prior holes in diffusion spaces. Our second significant contribution is to provide a theoretical hypothesis that diffusion spaces can be projected onto a bounded hypersphere, enabling image manipulation through geodesic traversal between inverted images. Our analysis shows that different geodesics share common attributes for the same manipulation, which we leverage to perform various image manipulations. We conduct thorough empirical evaluations to support and validate our claims. Finally, our third and final contribution introduces a novel approach to the few-shot sampling for out-of-distribution data by inverting a few images to sample from the cluster formed by the inverted latents. The proposed technique achieves state-of-the-art results for the few-shot generation task in terms of image quality. Our research underscores the promise of diffusion spaces in out-of-distribution imaging and offers avenues for further exploration.</p>
+    </div>
+
+    <div style="text-align: justify">
+      <p><em>Sai Niranjan Ramachandran<em>, Rudrabha Mukhopadhyay</em>, <b>Madhav Agarwal*</b>, C.V. Jawahar, Vinay Namboodiri<br /><em>*These authors contributed equally.</em></em></p>
+    </div>
+
+    <p>38th AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2024 (<b>Oral</b>)</p>
+
+    <p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/29395">Conference Proceedings</a></p>
+
+  </div>
+</div>
+
+<div class="col-sm-11 clearfix">
+  <div class="well">
+    <pubtit>Audio-Visual Face Reenactment</pubtit>
+
+    <p><img src="http://localhost:4000/images/pubpic/avfr_architecture_result.gif" class="img-responsive" width="300px" style="float: left" /></p>
+
+    <div style="text-align: justify">
+      <p>This work proposes a novel method to generate realistic talking head videos using audio and visual streams. We animate a source image by transferring head motion from a driving video using a dense motion field generated using learnable keypoints. We improve the quality of lip sync using audio as an additional input, helping the network to attend to the mouth region. We use additional priors using face segmentation and face mesh to improve the structure of the reconstructed faces. Finally, we improve the visual quality of the generations by incorporating a carefully designed identity-aware generator module. The identity-aware generator takes the source image and the warped motion features as input to generate a high-quality output with fine-grained details. Our method produces state-of-the-art results and generalizes well to unseen faces, languages, and voices. We comprehensively evaluate our approach using multiple metrics and outperforming the current techniques both qualitative and quantitatively. Our work opens up several applications, including enabling low bandwidth video calls.</p>
+    </div>
+
+    <div style="text-align: justify">
+      <p><em><b>Madhav Agarwal</b>, Rudrabha Mukhopadhyay, Vinay Namboodiri, C.V. Jawahar</em></p>
+    </div>
+
+    <p>Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2023</p>
+
+    <p><a href="https://openaccess.thecvf.com/content/WACV2023/html/Agarwal_Audio-Visual_Face_Reenactment_WACV_2023_paper.html">Conference Proceedings</a>
+ /
+ <a href="https://arxiv.org/abs/2210.02755">arXiv</a>
+ /
+ <a href="http://cvit.iiit.ac.in/research/projects/cvit-projects/avfr">Website</a>
+ /
+ <a href="https://github.com/mdv3101/AVFR-Gan/">Code</a></p>
+
+  </div>
+</div>
+
+<div class="col-sm-11 clearfix">
+  <div class="well">
+    <pubtit>Compressing Video Calls using Synthetic Talking Heads</pubtit>
+
+    <p><img src="http://localhost:4000/images/pubpic/vc_compression_pipeline.png" class="img-responsive" width="300px" style="float: left" /></p>
+
+    <div style="text-align: justify">
+      <p>We leverage the modern advancements in talking head generation to propose an end-to-end system for talking head video compression. Our algorithm transmits pivot frames intermittently while the rest of the talking head video is generated by animating them. We use a state-of-the-art face reenactment network to detect key points in the non-pivot frames and transmit them to the receiver. A dense flow is then calculated to warp a pivot frame to reconstruct the non-pivot ones. Transmitting key points instead of full frames leads to significant compression. We propose a novel algorithm to adaptively select the best-suited pivot frames at regular intervals to provide a smooth experience. We also propose a frame-interpolater at the receiver’s end to improve the compression levels further. Finally, a face enhancement network improves reconstruction quality, significantly improving several aspects like the sharpness of the generations. We evaluate our method both qualitatively and quantitatively on benchmark datasets and compare it with multiple compression techniques.</p>
+    </div>
+
+    <div style="text-align: justify">
+      <p><em><b>Madhav Agarwal</b>, Anchit Gupta, Rudrabha Mukhopadhyay, Vinay Namboodiri, C.V. Jawahar</em></p>
+    </div>
+
+    <p>33rd British Machine Vision Conference (<b>BMVC</b>), 2022</p>
+
+    <p><a href="https://bmvc2022.mpi-inf.mpg.de/289/">Conference Proceedings</a>
+ /
+ <a href="https://arxiv.org/abs/2210.03692">arXiv</a>
+ /
+ <a href="https://cvit.iiit.ac.in/research/projects/cvit-projects/talking-video-compression">Website</a></p>
+
+  </div>
+</div>
+
+<div class="col-sm-11 clearfix">
+  <div class="well">
+    <pubtit>Dataset Agnostic Document Object Detection</pubtit>
+
+    <p><img src="http://localhost:4000/images/pubpic/dolnet_architecture.jpg" class="img-responsive" width="300px" style="float: left" /></p>
+
+    <div style="text-align: justify">
+      <p>Localizing document objects such as tables, figures, and equations is a primary step for extracting information from document images. We propose a novel end-to-end trainable deep network, termed Document Object Localization Network (dolnet), for detecting various objects present in the document images. The proposed network is a multi-stage extension of Mask r-cnn with a dual backbone having deformable convolution for detecting document objects with high detection accuracy at a higher IoU threshold. We also empirically evaluate the proposed dolnet on the publicly available benchmark datasets. The proposed DOLNet achieves state-of-the-art performance for most of the bench-mark datasets under various existing experimental environments. Our solution has three important properties: (i) a single trained model dolnet that performs well across all the popular benchmark datasets, (ii) reports excellent performances across multiple, including with higher IoU thresholds, and (iii) consistently demonstrate the superior quantitative performance by following the same protocol of the recent works for each of the benchmarks.</p>
+    </div>
+
+    <div style="text-align: justify">
+      <p><em>Ajoy Mondal, <b>Madhav Agarwal</b>, C.V. Jawahar</em></p>
+    </div>
+
+    <p>Pattern Recognition, Volume 142, 2023</p>
+
+    <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320323003965">Journal</a></p>
+
+  </div>
+</div>
+
+<div class="col-sm-11 clearfix">
+  <div class="well">
+    <pubtit>CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images</pubtit>
+
+    <p><img src="http://localhost:4000/images/pubpic/cdecnet_architecture_result.png" class="img-responsive" width="300px" style="float: left" /></p>
+
+    <div style="text-align: justify">
+      <p>Localizing page elements/objects such as tables, figures, equations, etc. is the primary step in extracting information from document images. We propose a novel end-to-end trainable deep network, (CDeC-Net) for detecting tables present in the documents. The proposed network consists of a multistage extension of Mask R-CNN with a dual backbone having deformable convolution for detecting tables varying in scale with high detection accuracy at higher IoU threshold. We empirically evaluate CDeC-Net on the publicly available benchmark datasets with extensive experiments. Our solution has three important properties: (i) a single trained model CDeC-Net‡ that performs well across all the popular benchmark datasets; (ii) we report excellent performances across multiple, including higher, thresholds of IoU; (iii) by following the same protocol of the recent papers for each of the benchmarks, we consistently demonstrate the superior quantitative performance. Our code and models are publicly available for enabling reproducibility of the results.</p>
+    </div>
+
+    <div style="text-align: justify">
+      <p><em><b>Madhav Agarwal</b>, Ajoy Mondal, C.V. Jawahar</em></p>
+    </div>
+
+    <p>25th International Conference on Pattern Recognition (<b>ICPR</b>), 2020 (<b>Oral</b>)</p>
+
+    <p><a href="https://ieeexplore.ieee.org/abstract/document/9411922">Conference Proceedings</a>
+ /
+ <a href="https://arxiv.org/pdf/2008.10831.pdf">arXiv</a>
+ /
+ <a href="http://cvit.iiit.ac.in/usodi/cdec-net.php">Website</a>
+ /
+ <a href="https://github.com/mdv3101/CDeCNet">Code</a></p>
+
+  </div>
+</div>
+
+<p>   </p>
+
+
+</div>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-5">
+
+		  <p>&copy 2025 Madhav Agarwal.</p>
+		   <p>  </p><p>
+
+
+		</div>
+		<div class="col-sm-5">
+		</div>
+    <div class="col-sm-5">
+		</div>
+		<div class="col-sm-5">
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>

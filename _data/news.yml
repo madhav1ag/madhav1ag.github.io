@@ -1,0 +1,35 @@
+- date: "Jan 2025"
+  headline: "Joined <a href='https://www.eng.ed.ac.uk/' target='_blank'>School of Engineering</a>, <a href='https://www.ed.ac.uk/' target='_blank'>University of Edinburgh</a> as a Ph.D. student."
+
+- date: "Dec 2023"
+  headline: "<a href='https://ojs.aaai.org/index.php/AAAI/article/view/29395' target='_blank'>Understanding the Generalization of Pretrained Diffusion Models on Out-of-Distribution Data</a> got accepted to <a href='https://aaai.org/aaai-conference/' target='_blank'>AAAI 2024</a> (<b>Oral</b>)."
+
+- date: "Sept 2023"
+  headline: "Joined <a href='https://niessnerlab.org/' target='_blank'>Visual Computing & Artificial Intelligence</a>, <a href='https://www.tum.de' target='_blank'>Technical University of Munich</a> as a Scientific Researcher under <a href='https://niessnerlab.org/members/matthias_niessner/profile.html' target='_blank'>Prof. Matthias Nießner</a>."
+
+- date: "June 2023"
+  headline: "Successfully defended MS thesis <a href='https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/1265' target='_blank'>Face Reenactment: Crafting Realistic Talking Heads for Enhanced Video Communication and Beyond</a>."
+
+- date: "June 2023"
+  headline: "Invited at <a href='https://www.akgec.ac.in/' target='_blank'>AKG Engineering College</a> to give Guest Lecture on Generative AI."
+
+- date: "May 2023"
+  headline: "<a href='https://www.sciencedirect.com/science/article/abs/pii/S0031320323003965' target='_blank'>Dataset Agnostic Document Object Detection</a> got accepted to <a href='https://www.sciencedirect.com/journal/pattern-recognition' target='_blank'>Pattern Recognition</a> journal."
+
+- date: "Apr 2023"
+  headline: "Awarded with <b>'Non-Academic Award'</b> by <a href='https://www.iiit.ac.in/' target='_blank'>IIIT-Hyderabad</a> for contribution towards Mental Health on campus."
+
+- date: "Sept 2022"
+  headline: "<a href='https://arxiv.org/abs/2210.03692' target='_blank'>Compressing Video Calls using Synthetic Talking Heads</a> got accepted to <a href='https://bmvc2022.org/' target='_blank'>BMVC 2022</a>."
+
+- date: "Aug 2022"
+  headline: "<a href='https://arxiv.org/abs/2210.02755' target='_blank'>Audio-Visual Face Reenactment</a> got accepted to <a href='https://wacv2023.thecvf.com/' target='_blank'>WACV 2023</a>."
+
+- date: "Jan 2021"
+  headline: "Joined <a href='http://cvit.iiit.ac.in/' target='_blank'>CVIT</a>, <a href='https://www.iiit.ac.in/' target='_blank'>IIIT-Hyderabad</a> as a full-time MS by Research student under <a href='https://faculty.iiit.ac.in/~jawahar/index.html' target='_blank'>Prof. C.V. Jawahar</a>."
+
+- date: "Oct 2020"
+  headline: "<a href='https://ieeexplore.ieee.org/abstract/document/9411922' target='_blank'>CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images</a> got accepted to <a href='https://www.micc.unifi.it/icpr2020/' target='_blank'>ICPR 2020</a> (<b>Oral</b>)."
+
+- date: "Nov 2019"
+  headline: "Joined <a href='https://www.iiit.ac.in/' target='_blank'>IIIT-Hyderabad</a> as a Research Fellow at <a href='http://cvit.iiit.ac.in/' target='_blank'>CVIT</a>."
