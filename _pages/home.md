@@ -75,7 +75,7 @@ Contact: madhav <coda>[dot] agarwal
 
   <!-- <br clear="all" /> -->
 <div style="text-align: right">
-Contact: <a href="mailto:madhav.agarwal@ed.ac.uk">madhav.agarwal@ed.ac.uk</a>
+Contact: madhav.agarwal(at)ed(dot)ac(dot)uk
 </div>
 
 </div>
