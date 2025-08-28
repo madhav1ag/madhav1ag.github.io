@@ -15,8 +15,8 @@ permalink: /
 <div style="text-align: justify">
 I am a Ph.D. student at <a href="https://www.eng.ed.ac.uk/research/institutes/idcom/" target="_blank">IDCOM</a>
 in the <a href="https://www.eng.ed.ac.uk/" target="_blank">School of Engineering</a>, 
-<a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>. I am part of <a href="https://groups.inf.ed.ac.uk/vision/index.html" target="_blank">Vision Group</a> and <a href="https://vios.science/" target="_blank">VIOS</a>.
-I am supervised by <a href="https://smcdonagh.github.io/" target="_blank">Dr. Steven McDonagh</a> and 
+<a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>. I am a member of <a href="https://groups.inf.ed.ac.uk/vision/index.html" target="_blank">Vision Group</a> and <a href="https://vios.science/" target="_blank">VIOS</a>, working under the supervision
+of <a href="https://smcdonagh.github.io/" target="_blank">Dr. Steven McDonagh</a> and 
 <a href="https://laurasevilla.me/" target="_blank">Dr. Laura Sevilla</a>. 
 My interest lies in Multimodal Learning, Spatial-Temporal Understanding in Foundation Models, and Generative AI.
 
