@@ -167,7 +167,7 @@ Contact: madhav.agarwal(at)ed(dot)ac(dot)uk
 
 * CVPR 2025
 * ECCV 2024
-* WACV 2023
+* WACV 2024
 * ICPR 2022
 
 #### Journal Reviewer
