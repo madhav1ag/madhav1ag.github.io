@@ -51,8 +51,8 @@ Contact: madhav <coda>[dot] agarwal
 <p align="center">
   <a href="./docs/MadhavAgarwalCV.pdf">CV</a> /
   <a href="https://scholar.google.com/citations?user=t8VdoRYAAAAJ&hl=en">Google Scholar</a> /
-  <a href="https://github.com/mdv3101">Github</a> /
-  <a href="https://www.linkedin.com/in/madhav3101/">LinkedIn</a> /
+  <a href="https://github.com/madhav1ag">Github</a> /
+  <a href="https://www.linkedin.com/in/madhav1ag/">LinkedIn</a> /
   <a href="https://arxiv.org/a/agarwal_m_1"> arXiv </a> /
   <a href="https://orcid.org/0000-0001-8267-1024">ORCID</a>
 </p>
