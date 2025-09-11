@@ -24,7 +24,7 @@
     url: http://cvit.iiit.ac.in/research/projects/cvit-projects/avfr
     display: Website
   link4:
-    url: https://github.com/mdv3101/AVFR-Gan/
+    url: https://github.com/madhav1ag/AVFR-Gan/
     display: Code
 
 - title: "Compressing Video Calls using Synthetic Talking Heads"
@@ -69,5 +69,5 @@
     url: http://cvit.iiit.ac.in/usodi/cdec-net.php
     display: Website
   link4:
-    url: https://github.com/mdv3101/CDeCNet
+    url: https://github.com/madhav1ag/CDeCNet
     display: Code
