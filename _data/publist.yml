@@ -1,3 +1,20 @@
+- title: "GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting"
+  image: gaussian-head-talk.png
+  description: "Speech-driven talking heads have emerged recently, enabling interactive avatars. However, real-world applications are limited, as current methods are either accurate but slow or fast yet temporally unstable. Diffusion methods provide realistic image generation, yet struggle with one-shot generation while Gaussian Splatting approaches are real-time, yet inaccuracies in tracking or mappings of Gaussians lead to unstable outputs and video artifacts, detrimental to realistic use cases. We address this by mapping Gaussian Splatting via 3D Morphable Models (3DMM) to generate person-specific avatars and introduce transformer-based prediction of 3DMM parameters, directly from audio, to drive temporal consistency. From monocular video and independent speech input signals we generate real-time talking head videos with lip-sync, where we report competitive quantitative and qualitative video-generation performance."
+  authors: "<b>Madhav Agarwal</b>, Mingtian Zhang, Laura Sevilla-Lara, Steven McDonagh"
+  venue: "Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2026"
+  number_link: 3
+  link1:
+    url: ""
+    display: Conference Proceedings
+  link2:
+    url: ""
+    display: arXiv
+  link3:
+    url: ""
+    display: Website
+
+
 - title: "Understanding the Generalization of Pretrained Diffusion Models on Out-of-Distribution Data"
   image: aaai_ood.png
   description: "This work tackles the important task of understanding out-of-distribution behavior in two prominent types of generative models, i.e., GANs and Diffusion models. Understanding this behavior is crucial in understanding their broader utility and risks as these systems are increasingly deployed in our daily lives. Our first contribution is demonstrating that diffusion spaces outperform GANs' latent spaces in inverting high-quality OOD images. We also provide a theoretical analysis attributing this to the lack of prior holes in diffusion spaces. Our second significant contribution is to provide a theoretical hypothesis that diffusion spaces can be projected onto a bounded hypersphere, enabling image manipulation through geodesic traversal between inverted images. Our analysis shows that different geodesics share common attributes for the same manipulation, which we leverage to perform various image manipulations. We conduct thorough empirical evaluations to support and validate our claims. Finally, our third and final contribution introduces a novel approach to the few-shot sampling for out-of-distribution data by inverting a few images to sample from the cluster formed by the inverted latents. The proposed technique achieves state-of-the-art results for the few-shot generation task in terms of image quality. Our research underscores the promise of diffusion spaces in out-of-distribution imaging and offers avenues for further exploration."
