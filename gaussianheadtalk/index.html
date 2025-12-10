@@ -1,0 +1,263 @@
+---
+layout: default
+---
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .research-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: white;
+    }
+
+    .research-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    .research-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .authors {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .author {
+        display: inline;
+    }
+
+    .author a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .author a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+
+    .affiliation {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        vertical-align: super;
+    }
+
+    .affiliations {
+        font-size: 0.95em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    .conference {
+        font-size: 1.1em;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    .conference a {
+        color: #e74c3c;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .conference a:hover {
+        color: #c0392b;
+        text-decoration: underline;
+    }
+
+    .links {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .link-button {
+        padding: 10px 25px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-weight: 500;
+    }
+
+    .link-button:hover {
+        background-color: #2980b9;
+    }
+
+    .teaser {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .teaser img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .section {
+        margin: 40px 0;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    .abstract {
+        text-align: justify;
+        font-size: 1.05em;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    .video-container {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .video-placeholder {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        margin: 0 auto;
+        color: #666;
+    }
+
+    .bibtex {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+        overflow-x: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+
+    .bibtex pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    @media (max-width: 768px) {
+        .research-title {
+            font-size: 1.6em;
+        }
+
+        .links {
+            flex-wrap: wrap;
+        }
+
+        .link-button {
+            width: 45%;
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="research-container">
+    <header class="research-header">
+        <h1 class="research-title">GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting</h1>
+        
+        <div class="authors">
+            <span class="author"><a href="https://madhav1ag.github.io/" target="_blank">Madhav Agarwal</a><span class="affiliation">1</span></span>, 
+            <span class="author"><a href="https://mingtian.ai/" target="_blank">Mingtian Zhang</a><span class="affiliation">2</span></span>, 
+            <span class="author"><a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a><span class="affiliation">1</span></span>, 
+            <span class="author"><a href="https://smcdonagh.github.io/" target="_blank">Steven McDonagh</a><span class="affiliation">3</span></span>
+        </div>
+        
+        <div class="affiliations">
+            <div><span class="affiliation">1</span>University of Edinburgh</div>
+            <div><span class="affiliation">2</span>University College London</div>
+        </div>
+
+        <div class="conference">
+            <a href="https://wacv.thecvf.com/Conferences/2026" target="_blank">WACV 2026</a>
+        </div>
+
+        <div class="links">
+            <a href="#" class="link-button">📄 arXiv</a>
+            <a href="https://youtu.be/H0RaUa4qgJo" class="link-button">🎥 Video</a>
+            <a href="https://github.com/madhav1ag/GaussianHeadTalk" class="link-button">💻 GitHub</a>
+            <a href="#" class="link-button">🏛️ Conference Proceedings</a>
+        </div>
+    </header>
+
+    <section class="teaser">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/gaussian-head-talk.png" alt="GaussianHeadTalk Teaser">
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Abstract</h2>
+        <p class="abstract">
+            Speech-driven talking heads have recently emerged and enable interactive avatars. However, real-world applications are limited, as current methods achieve high visual fidelity but slow or fast yet temporally unstable. Diffusion methods provide realistic image generation, yet struggle with one-shot settings. Gaussian Splatting approaches are real-time, yet inaccuracies in facial tracking, or inconsistent Gaussian mappings, lead to unstable outputs and video artifacts that are detrimental to realistic use cases. We address this problem by mapping Gaussian Splatting using 3D Morphable Models to generate person-specific avatars. We introduce transformer-based prediction of model parameters, directly from audio, to drive temporal consistency. From monocular video and independent audio speech inputs, our method enables generation of real-time talking head videos where we report competitive quantitative and qualitative performance.
+        </p>
+    </section>
+
+    <!-- <section class="section">
+        <h2 class="section-title">Demo Video</h2>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="{{ site.baseurl }}/gaussianheadtalk/gaussianheadtalk_demo_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section> -->
+
+    <section class="section">
+        <h2 class="section-title">Demo Video</h2>
+        <div class="video-container">
+            <iframe width="800" height="450"
+                    src="https://www.youtube.com/embed/H0RaUa4qgJo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+    
+
+    <section class="section">
+        <h2 class="section-title">Citation</h2>
+        <p>If you find this work useful for your research, please consider citing:</p>
+        <div class="bibtex">
+            <pre>@inproceedings{agarwal2024gaussianheadtalk,
+  title={GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting},
+  author={Agarwal, Madhav and Zhang, Mingtian and Sevilla-Lara, Laura and McDonagh, Steven},
+  booktitle={WACV},
+  year={2026}
+}</pre>
+        </div>
+    </section>
+</div>
