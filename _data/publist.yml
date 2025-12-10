@@ -11,8 +11,8 @@
     url: ""
     display: arXiv
   link3:
-    url: ""
-    display: Website
+    url: "https://madhav1ag.github.io/gaussianheadtalk/"
+    display: Webpage
 
 
 - title: "Understanding the Generalization of Pretrained Diffusion Models on Out-of-Distribution Data"
@@ -39,7 +39,7 @@
     display: arXiv
   link3:
     url: http://cvit.iiit.ac.in/research/projects/cvit-projects/avfr
-    display: Website
+    display: Webpage
   link4:
     url: https://github.com/madhav1ag/AVFR-Gan/
     display: Code
@@ -58,7 +58,7 @@
     display: arXiv
   link3:
     url: https://cvit.iiit.ac.in/research/projects/cvit-projects/talking-video-compression
-    display: Website
+    display: Webpage
 
 - title: "Dataset Agnostic Document Object Detection"
   image: dolnet_architecture.jpg
@@ -84,7 +84,7 @@
     display: arXiv
   link3:
     url: http://cvit.iiit.ac.in/usodi/cdec-net.php
-    display: Website
+    display: Webpage
   link4:
     url: https://github.com/madhav1ag/CDeCNet
     display: Code
