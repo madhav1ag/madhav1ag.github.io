@@ -5,7 +5,7 @@
   venue: "Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2026"
   number_link: 3
   link1:
-    url: ""
+    url: https://openaccess.thecvf.com/content/WACV2026/html/Agarwal_GaussianHeadTalk_Wobble-Free_3D_Talking_Heads_with_Audio_Driven_Gaussian_Splatting_WACV_2026_paper.html
     display: Conference Proceedings
   link2:
     url: "https://arxiv.org/abs/2512.10939"
