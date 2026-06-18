@@ -96,6 +96,9 @@ Contact: madhav <coda>[dot] agarwal
       <h3 id="news">News</h3>
       <hr />
 
+      <p>Jun 2026 :
+<em><a href="https://arxiv.org/abs/2604.15280" target="_blank">Why Do Vision Language Models Struggle To Recognize Human Emotions?</a> got accepted to <a href="https://eccv.ecva.net/Conferences/2026" target="_blank">ECCV 2026</a>.</em></p>
+
       <p>Nov 2025 :
 <em><a href="https://arxiv.org/abs/2512.10939" target="_blank">GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting</a> got accepted to <a href="https://wacv.thecvf.com/Conferences/2026" target="_blank">WACV 2026</a>.</em></p>
 
@@ -113,9 +116,6 @@ Contact: madhav <coda>[dot] agarwal
 
       <p>June 2023 :
 <em>Invited at <a href="https://www.akgec.ac.in/" target="_blank">AKG Engineering College</a> to give Guest Lecture on Generative AI.</em></p>
-
-      <p>May 2023 :
-<em><a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320323003965" target="_blank">Dataset Agnostic Document Object Detection</a> got accepted to <a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank">Pattern Recognition</a> journal.</em></p>
 
       <h4 id="see-all-news"><a href="http://localhost:4000/allnews.html">See all news</a></h4>
 
@@ -141,6 +141,27 @@ Contact: madhav <coda>[dot] agarwal
 
   <h3 id="publications">Publications</h3>
   <hr />
+
+  <div class="col-sm-11 clearfix">
+    <div class="well">
+      <pubtit>Why Do Vision Language Models Struggle To Recognize Human Emotions?</pubtit>
+
+      <p><img src="http://localhost:4000/images/pubpic/emotion_vlm.png" class="img-responsive" width="300px" style="float: left" /></p>
+
+      <div style="text-align: justify">
+        <p>Understanding emotions is a fundamental ability for intelligent systems to be able to interact with humans. Vision-language models (VLMs) have made tremendous progress in the last few years for many visual tasks, potentially offering a promising solution for understanding emotions. However, it is surprising that even the most sophisticated contemporary VLMs struggle to recognize human emotions or to outperform even specialized vision-only classifiers. In this paper we ask the question ‘Why do VLMs struggle to recognize human emotions?’, and observe that the inherently continuous and dynamic task of facial expression recognition (DFER) exposes two critical VLM vulnerabilities. First, emotion datasets are naturally long-tailed, and the web-scale data used to pre-train VLMs exacerbates this head-class bias, causing them to systematically collapse rare, under-represented emotions into common categories. We propose alternative sampling strategies that prevent favoring common concepts. Second, temporal information is critical for understanding emotions. However, VLMs are unable to represent temporal information over dense frame sequences, as they are limited by context size and the number of tokens that can fit in memory, which poses a clear challenge for emotion recognition. We demonstrate that the sparse temporal sampling strategy used in VLMs is inherently misaligned with the fleeting nature of micro-expressions (0.25-0.5 seconds), which are often the most critical affective signal. As a diagnostic probe, we propose a multi-stage context enrichment strategy that utilizes the information from ‘in-between’ frames by first converting them into natural language summaries. This enriched textual context is provided as input to the VLM alongside sparse keyframes, preventing attentional dilution from excessive visual data while preserving the emotional trajectory.</p>
+      </div>
+
+      <div style="text-align: justify">
+        <p><em><b>Madhav Agarwal</b>, Sotirios A. Tsaftaris, Laura Sevilla-Lara, Steven McDonagh</em></p>
+      </div>
+
+      <p>19th European Conference on Computer Vision (<b>ECCV</b>), 2026</p>
+
+      <p><a href="https://arxiv.org/abs/2604.15280">arXiv</a></p>
+
+    </div>
+  </div>
 
   <div class="col-sm-11 clearfix">
     <div class="well">
@@ -236,27 +257,6 @@ Contact: madhav <coda>[dot] agarwal
  <a href="https://arxiv.org/abs/2210.03692">arXiv</a>
  /
  <a href="https://cvit.iiit.ac.in/research/projects/cvit-projects/talking-video-compression">Webpage</a></p>
-
-    </div>
-  </div>
-
-  <div class="col-sm-11 clearfix">
-    <div class="well">
-      <pubtit>Dataset Agnostic Document Object Detection</pubtit>
-
-      <p><img src="http://localhost:4000/images/pubpic/dolnet_architecture.jpg" class="img-responsive" width="300px" style="float: left" /></p>
-
-      <div style="text-align: justify">
-        <p>Localizing document objects such as tables, figures, and equations is a primary step for extracting information from document images. We propose a novel end-to-end trainable deep network, termed Document Object Localization Network (dolnet), for detecting various objects present in the document images. The proposed network is a multi-stage extension of Mask r-cnn with a dual backbone having deformable convolution for detecting document objects with high detection accuracy at a higher IoU threshold. We also empirically evaluate the proposed dolnet on the publicly available benchmark datasets. The proposed DOLNet achieves state-of-the-art performance for most of the bench-mark datasets under various existing experimental environments. Our solution has three important properties: (i) a single trained model dolnet that performs well across all the popular benchmark datasets, (ii) reports excellent performances across multiple, including with higher IoU thresholds, and (iii) consistently demonstrate the superior quantitative performance by following the same protocol of the recent works for each of the benchmarks.</p>
-      </div>
-
-      <div style="text-align: justify">
-        <p><em>Ajoy Mondal, <b>Madhav Agarwal</b>, C.V. Jawahar</em></p>
-      </div>
-
-      <p>Pattern Recognition, Volume 142, 2023</p>
-
-      <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320323003965">Journal</a></p>
 
     </div>
   </div>
