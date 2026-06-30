@@ -3,11 +3,13 @@
   description: "Understanding emotions is a fundamental ability for intelligent systems to be able to interact with humans. Vision-language models (VLMs) have made tremendous progress in the last few years for many visual tasks, potentially offering a promising solution for understanding emotions. However, it is surprising that even the most sophisticated contemporary VLMs struggle to recognize human emotions or to outperform even specialized vision-only classifiers. In this paper we ask the question 'Why do VLMs struggle to recognize human emotions?', and observe that the inherently continuous and dynamic task of facial expression recognition (DFER) exposes two critical VLM vulnerabilities. First, emotion datasets are naturally long-tailed, and the web-scale data used to pre-train VLMs exacerbates this head-class bias, causing them to systematically collapse rare, under-represented emotions into common categories. We propose alternative sampling strategies that prevent favoring common concepts. Second, temporal information is critical for understanding emotions. However, VLMs are unable to represent temporal information over dense frame sequences, as they are limited by context size and the number of tokens that can fit in memory, which poses a clear challenge for emotion recognition. We demonstrate that the sparse temporal sampling strategy used in VLMs is inherently misaligned with the fleeting nature of micro-expressions (0.25-0.5 seconds), which are often the most critical affective signal. As a diagnostic probe, we propose a multi-stage context enrichment strategy that utilizes the information from 'in-between' frames by first converting them into natural language summaries. This enriched textual context is provided as input to the VLM alongside sparse keyframes, preventing attentional dilution from excessive visual data while preserving the emotional trajectory."
   authors: "<b>Madhav Agarwal</b>, Sotirios A. Tsaftaris, Laura Sevilla-Lara, Steven McDonagh"
   venue: "19th European Conference on Computer Vision (<b>ECCV</b>), 2026"
-  number_link: 1
+  number_link: 2
   link1:
     url: "https://arxiv.org/abs/2604.15280"
     display: arXiv
-
+  link2:
+    url: "https://madhav1ag.github.io/vlm-temporal-emotion-gap/"
+    display: Webpage
 
 - title: "GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting"
   image: gaussian-head-talk.png

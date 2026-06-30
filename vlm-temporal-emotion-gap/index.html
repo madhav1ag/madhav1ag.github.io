@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Do Vision Language Models Struggle To Recognize Human Emotions?</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #333; background:#fff; }
+
+    .research-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: white;
+    }
+
+    .research-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    .research-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .authors { font-size: 1.1em; margin-bottom: 15px; color: #555; line-height: 1.8; }
+    .author { display: inline; }
+    .author a { color: #3498db; text-decoration: none; transition: color 0.3s ease; }
+    .author a:hover { color: #2980b9; text-decoration: underline; }
+    .affiliations { font-size: 0.95em; color: #666; margin-top: 10px; }
+
+    .keywords { font-size: 0.95em; color: #7f8c8d; margin-top: 14px; font-style: italic; }
+
+    .conference { font-size: 1.1em; margin-top: 15px; font-weight: 500; }
+    .conference a { color: #e74c3c; text-decoration: none; transition: color 0.3s ease; }
+    .conference a:hover { color: #c0392b; text-decoration: underline; }
+
+    .links {
+        margin: 25px 0 5px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .link-button {
+        padding: 10px 25px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-weight: 500;
+    }
+    .link-button:hover { background-color: #2980b9; }
+
+    .teaser { margin: 40px 0; text-align: center; }
+    .teaser img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+    .section { margin: 48px 0; }
+    .section-title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    .abstract { text-align: justify; font-size: 1.05em; line-height: 1.8; color: #444; }
+
+    .figure { margin: 36px 0; text-align: center; }
+    .figure img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.10); border: 1px solid #eee; }
+    .figure figcaption {
+        font-size: 0.95em; color: #666; margin-top: 14px; line-height: 1.6;
+        text-align: left; max-width: 900px; margin-left: auto; margin-right: auto;
+    }
+    .figure figcaption b { color: #2c3e50; }
+
+    .findings p { font-size: 1.05em; line-height: 1.8; color: #444; margin-bottom: 16px; text-align: justify; }
+
+    .bibtex {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+        overflow-x: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+    .bibtex pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; }
+
+    @media (max-width: 768px) {
+        .research-title { font-size: 1.5em; }
+        .links { flex-wrap: wrap; }
+        .link-button { width: 45%; text-align: center; }
+    }
+</style>
+</head>
+<body>
+<div class="research-container">
+    <header class="research-header">
+        <h1 class="research-title">Why Do Vision Language Models Struggle To Recognize Human Emotions?</h1>
+
+        <div class="authors">
+            <span class="author"><a href="https://madhav1ag.github.io/" target="_blank">Madhav Agarwal</a></span>,
+            <span class="author"><a href="https://vios.science/team/sotos/" target="_blank">Sotirios A. Tsaftaris</a></span>,
+            <span class="author"><a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a></span>,
+            <span class="author"><a href="https://smcdonagh.github.io/" target="_blank">Steven McDonagh</a></span>
+        </div>
+
+        <div class="affiliations">
+            <div>The University of Edinburgh, UK</div>
+        </div>
+
+        <div class="keywords">Temporal Understanding &middot; Vision-Language Models &middot; Emotion Recognition</div>
+
+        <div class="conference">
+            <a href="https://eccv.ecva.net/" target="_blank">ECCV 2026</a>
+        </div>
+
+        <div class="links">
+            <a href="https://arxiv.org/abs/2604.15280" class="link-button" target="_blank">📄 arXiv</a>
+            <a href="https://arxiv.org/pdf/2604.15280" class="link-button" target="_blank">📑 PDF</a>
+            <a href="https://madhav1ag.github.io/vlm-temporal-emotion-gap" class="link-button" target="_blank">🌐 Project Page</a>
+        </div>
+    </header>
+
+    <section class="teaser">
+        <img src="teaser.jpg" alt="Qualitative failure analysis of SOTA VLMs">
+        <figcaption style="font-size:0.95em;color:#666;margin-top:14px;line-height:1.6;text-align:left;">
+            <b>Qualitative failure analysis of SOTA VLMs on video emotion recognition.</b>
+            VLMs such as Gemini2.5-Flash, Qwen2.5-VL and EmotionQwen misclassify emotions by failing to capture subtle, temporal cues &mdash; overlooking a brief smile (top, <i>Happiness</i> &rarr; Sadness/Neutral/Disgust) or a tensed expression (bottom, <i>Anger</i> &rarr; Neutral/Anxiety).
+        </figcaption>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Abstract</h2>
+        <p class="abstract">
+            Understanding emotions is a fundamental ability for intelligent systems to be able to interact with humans. Vision-language models (VLMs) have made tremendous progress in the last few years for many visual tasks, potentially offering a promising solution for understanding emotions. However, it is surprising that even the most sophisticated contemporary VLMs struggle to recognize human emotions or to outperform even specialized vision-only classifiers. In this paper we ask the question &ldquo;Why do VLMs struggle to recognize human emotions?&rdquo;, and observe that the inherently continuous and dynamic task of facial expression recognition (DFER) exposes two critical VLM vulnerabilities. First, emotion datasets are naturally long-tailed, and the web-scale data used to pre-train VLMs exacerbates this head-class bias, causing them to systematically collapse rare, under-represented emotions into common categories. We propose alternative sampling strategies that prevent favoring common concepts. Second, temporal information is critical for understanding emotions. However, VLMs are unable to represent temporal information over dense frame sequences, as they are limited by context size and the number of tokens that can fit in memory, which poses a clear challenge for emotion recognition. We demonstrate that the sparse temporal sampling strategy used in VLMs is inherently misaligned with the fleeting nature of micro-expressions (0.25&ndash;0.5 seconds), which are often the most critical affective signal. As a diagnostic probe, we propose a multi-stage context enrichment strategy that utilizes the information from &lsquo;in-between&rsquo; frames by first converting them into natural language summaries. This enriched textual context is provided as input to the VLM alongside sparse keyframes, preventing attentional dilution from excessive visual data while preserving the emotional trajectory.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Method: Multi-Stage Context Enrichment</h2>
+        <p class="abstract" style="margin-bottom:10px;">
+            VLMs face a dilemma: sparse sampling misses fleeting micro-expressions, while dense sampling floods the context window with redundant tokens. Rather than discarding the &lsquo;in-between&rsquo; frames, <b>MSCE</b> translates their motion cues into compact natural-language summaries that VLMs process effectively, then interleaves these summaries with sparse keyframes for a final, temporally-aware classification.
+        </p>
+        <figure class="figure">
+            <img src="msce.jpg" alt="Multi-Stage Context Enrichment pipeline">
+            <figcaption>
+                <b>Multi-Stage Context Enrichment (MSCE)</b> is a two-stage inference pipeline. <i>Top (baseline):</i> a VLM given only sparse keyframes misses the micro-expression and predicts <i>Neutral</i>. <i>Bottom (MSCE):</i> Stage&nbsp;1 converts the in-between frames into a compact motion description; Stage&nbsp;2 interleaves this text with the sparse keyframes, recovering the correct label (<i>Happiness</i>).
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="section findings">
+        <h2 class="section-title">Key Findings</h2>
+
+        <p><b>1. Emotion recognition inherits a long-tail bias.</b> Per-class VLM accuracy correlates strongly with the lexical frequency of emotion terms in web-scale text, with cross-lingual consistency (English &amp; Chinese) pointing to a deep linguistic/cultural skew rather than mere pre-training statistics.</p>
+        <figure class="figure">
+            <img src="lexical_correlation.jpg" alt="Correlation between lexical frequency and VLM accuracy">
+            <figcaption>
+                <b>Correlation between lexical frequency and VLM accuracy.</b> Per-class F1 plotted against Google Books Ngram frequency on MAFW and DFEW. Rarer emotions (e.g. <i>contempt</i>, <i>helplessness</i>) have lower lexical frequency and weaker VLM performance.
+            </figcaption>
+        </figure>
+
+        <p><b>2. Rare emotions collapse into common ones.</b> Confusion matrices reveal a strong &lsquo;neutral&rsquo; sink: low-frequency emotions are systematically absorbed into high-frequency categories. Decoupled pretrain-then-balanced fine-tuning makes predictions markedly more uniform, confirming the issue is data bias rather than incapacity.</p>
+        <figure class="figure">
+            <img src="confusion_matrices.jpg" alt="Confusion matrices on MAFW">
+            <figcaption>
+                <b>Confusion matrices on MAFW.</b> Original distribution (top row) vs. balanced fine-tuning (bottom row), for MAE-DFER, HiCMAE and Qwen2.5-VL. Balancing reduces head-class collapse and improves tail-class recall.
+            </figcaption>
+        </figure>
+
+        <p><b>3. More frames is not better &mdash; attention gets diluted.</b> Accuracy rises then falls as frame rate increases (peaking near 5&nbsp;FPS), as redundant visual tokens saturate the context window. VLMs are also largely indifferent to frame shuffling, revealing an order-agnostic &lsquo;bag-of-frames&rsquo; processing strategy.</p>
+        <figure class="figure">
+            <img src="fps_curve.jpg" alt="VLM performance vs input frame rate">
+            <figcaption>
+                <b>VLM performance vs. input frame rate.</b> Macro-F1 of Qwen2.5-VL and EmotionQwen on MAFW. The quasi-bell-shaped curve shows performance improving (1&ndash;5&nbsp;FPS) then degrading (&gt;5&nbsp;FPS) &mdash; evidence of attentional dilution from redundant visual tokens.
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Citation</h2>
+        <p>If you find this work useful for your research, please consider citing:</p>
+        <div class="bibtex">
+<pre>@InProceedings{Agarwal_2026_ECCV,
+    author    = {Agarwal, Madhav and Tsaftaris, Sotirios A. and Sevilla-Lara, Laura and McDonagh, Steven},
+    title     = {Why Do Vision Language Models Struggle To Recognize Human Emotions?},
+    booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+    year      = {2026}
+}</pre>
+        </div>
+    </section>
+</div>
+</body>
+</html>
