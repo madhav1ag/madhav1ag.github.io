@@ -209,8 +209,7 @@
         <div class="content has-text-justified" style="margin-top: 2.5rem;">
           <p><span class="finding-lead">3. More frames is not better &mdash; attention gets diluted.</span>
           Accuracy rises then falls as frame rate increases (peaking near 5&nbsp;FPS), as redundant visual tokens saturate the
-          context window. VLMs are also largely indifferent to frame shuffling, revealing an order-agnostic
-          &lsquo;bag-of-frames&rsquo; processing strategy.</p>
+          context window &mdash; and even at its peak, VLM performance stays below the vision-only baselines.</p>
         </div>
         <div class="has-text-centered">
           <img src="fps_curve.jpg" alt="VLM performance vs input frame rate" class="figure-img" style="max-width: 640px;">
@@ -219,6 +218,14 @@
             curve shows performance improving (1&ndash;5&nbsp;FPS) then degrading (&gt;5&nbsp;FPS) &mdash; evidence of
             attentional dilution from redundant visual tokens.
           </p>
+        </div>
+
+        <!-- Finding 4: Frame shuffling -->
+        <div class="content has-text-justified" style="margin-top: 2.5rem;">
+          <p><span class="finding-lead">4. Frame order barely matters &mdash; VLMs process a &lsquo;bag of frames&rsquo;.</span>
+          When the temporal order of frames is destroyed by shuffling (FS), vision-only classifiers drop sharply, while VLM
+          scores are essentially unchanged (and sometimes even improve). This order-agnostic behaviour indicates that VLMs
+          aggregate per-frame appearance rather than reasoning over temporal dynamics.</p>
         </div>
 
         <!-- Table 2: Frame shuffling -->
@@ -289,7 +296,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full has-text-centered">
-        <h2 class="title is-3">Method: Multi-Stage Context Enrichment</h2>
+        <h2 class="title is-3">Mitigation Method: Multi-Stage Context Enrichment</h2>
         <div class="content has-text-justified">
           <p>
             VLMs face a dilemma: sparse sampling misses fleeting micro-expressions, while dense sampling floods the context
